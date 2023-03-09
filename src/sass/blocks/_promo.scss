@@ -25,12 +25,13 @@
     }
     &__icons {
         margin-top: 60px;
-        width: 425px;
+        width: 440px;
         display: flex;
         justify-content: space-between;
+        align-items: baseline;
     }
     &__icon {
-        width: 108px;
+        width: 120px;
         color: #FFFFFF;
         font-weight: 500;
         font-size: 14px;
