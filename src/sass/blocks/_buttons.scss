@@ -9,6 +9,14 @@
     font-size: 12px;
     text-align: center;
     text-transform: uppercase;
+    transition: 0.5s all;
+    &:hover {
+        background-color: #d11824;
+    }
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 0 1px #e7deb4;
+    }
     &_main {
         margin-top: 65px;
         width: 300px;
