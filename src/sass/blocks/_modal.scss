@@ -17,8 +17,8 @@
     padding: 38px 37px 40px 37px;
     &__close {
         position: absolute;
-        top: -15px;
-        right: -38px;
+        top: -12px;
+        right: -36px;
         font-size: 54px;
         line-height: 54px;
         color: $main-color;
@@ -46,7 +46,7 @@
     label.error {
         border: none;
         text-align: center;
-        margin-bottom: 20px;;
+        margin-bottom: 10px;
     }
 }
 
