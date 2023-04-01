@@ -19,6 +19,7 @@
         }
         &_submit {
             height: 56px;
+            width: 100%;
             font-size: 15px;
         }
         &_mini {
@@ -98,24 +99,42 @@
         }
     }
     .feed-form {
-        width: 300px;
         &_mt25 {
-            width: 280px;
+            width: 100%;
         }
         input {
             height: 48px;
-            font-size: 13px;
+            font-size: 12px;
+        }
+        input.error {
+            margin-bottom: 8px;
+            font-size: 12px;
         }
         label.error {
-            font-size: 13px;
+            margin-bottom: 8px;
+            font-size: 12px;
         }
     }
     .carousel {
         padding: 77px 0 30px 0;
         &__inner {
-            width: 680px;
+            width: 600px;
             img {
                 max-width: 100%;
+            }
+        }
+        .slick-prev {
+            left: -60px;
+            img {
+                width: 29px;
+                height: 45px;
+            }
+        }
+        .slick-next {
+            right: -60px;
+            img {
+                width: 29px;
+                height: 45px;
             }
         }
     }
@@ -170,13 +189,16 @@
         }
     }
     .feed {
-        min-height: 868px;
+        min-height: 866px;
         margin-top: 54px;
         &__item {
             margin-top: 53px;
         }
         &__title {
             font-size: 16px;
+        }
+        &__descr {
+            margin-left: 56px;
         }
         &__subtitle {
             font-size: 12px;
@@ -217,8 +239,31 @@
             }
         }
     }
-    .overlay {
-
+    .modal {
+        width: 328px;
+        min-height: 355px;
+        padding: 22px 30px 34px 30px;
+        &__close {
+            top: -10px;
+            right: -32px;
+            font-size: 50px;
+            line-height: 50px;
+        }
+        &__subtitle {
+            font-size: 15px;
+        }
+        &__descr {
+            margin-top: 5px;
+            font-size: 11px;
+        }
+        input {
+            margin-bottom: 16px;
+            height: 44px;
+        }
+        .button_submit {
+            height: 50px;
+            font-size: 14px;
+        }
     }
 }
 
@@ -243,8 +288,9 @@
             height: 44px;
         }
         &_submit {
-            height: 48px;
-            font-size: 13px;
+            height: 50px;
+            width: 100%;
+            font-size: 14px;
         }
         &_mini {
             width: 84px;
@@ -316,7 +362,7 @@
         }
     }
     .consultation {
-        min-height: 554px;
+        min-height: 562px;
         padding: 84px 0 94px 0;
         &__descr {
             font-size: 14px;
@@ -325,29 +371,44 @@
     }
     .feed-form {
         width: 280px;
+        margin-top: 32px;
         &_mt25 {
-            width: 280px;
+            width: 100%;
+            margin-top: 20px;
         }
         input {
-            height: 46px;
+            height: 44px;
+            font-size: 11px;
+        }
+        input.error {
+            margin-bottom: 7px;
             font-size: 11px;
         }
         label.error {
+            margin-bottom: 7px;
             font-size: 11px;
         }
     }
     .carousel {
         padding: 70px 0 30px 0;
         &__inner {
-            width: 450px;
-            .slick-list {
-
-            }
-            .slick-dots {
-                list-style-type: none;
-            }
+            width: 500px;
             img {
                 max-width: 100%;
+            }
+        }
+        .slick-prev {
+            left: -50px;
+            img {
+                width: 25px;
+                height: 40px;
+            }
+        }
+        .slick-next {
+            right: -50px;
+            img {
+                width: 25px;
+                height: 40px;
             }
         }
     }
@@ -411,7 +472,7 @@
         }
     }
     .feed {
-        min-height: 732px;
+        min-height: 674px;
         margin-top: 40px;
         &__item {
             margin-top: 46px;
@@ -419,6 +480,9 @@
         &__img {
             width: 139px;
             height: 139px
+        }
+        &__descr {
+            margin-left: 42px;
         }
         &__title {
             font-size: 14px;
@@ -464,13 +528,34 @@
         }
     }
     .modal {
-        &_size {
-            width: 354px;
+        width: 262px;
+        min-height: 276px;
+        padding: 16px 24px 28px 24px;
+        &__close {
+            right: -28px;
+            font-size: 42px;
+            line-height: 42px;
         }
         &__subtitle {
-            font-size: 15px;
+            font-size: 12px;
         }
         &__descr {
+            margin-top: 3px;
+            font-size: 9px;
+        }
+        input {
+            margin-bottom: 12px;
+            height: 34px;
+            font-size: 9px;
+        }
+        input.error {
+            font-size: 9px;
+        }
+        label.error {
+            font-size: 9px;
+        }
+        .button_submit {
+            height: 40px;
             font-size: 11px;
         }
     }
@@ -571,36 +656,62 @@
         }
     }
     .consultation {
-        min-height: 486px;
+        min-height: 450px;
         padding: 65px 0 75px 0;
         &__descr {
             font-size: 12px;
-            line-height: 18px;
+            line-height: 16px;
         }
     }
     .feed-form {
         width: 240px;
-        margin-top: 30px;
+        margin-top: 25px;
         &_mt25 {
-            width: 290px;
+            width: 100%;
+            margin-top: 12px;
         }
         input {
-            height: 40px;
-            font-size: 10px;
+            margin-bottom: 15px;
+            padding: 0 20px;
+            height: 36px;
+            font-size: 9px;
+        }
+        input.error {
+            height: 36px;
+            font-size: 9px;
+            margin-bottom: 5px;
         }
         label.error {
-            font-size: 10px;
+            font-size: 9px;
+            margin-bottom: 5px;
         }
     }
     .carousel {
         padding: 55px 0 30px 0;
         &__inner {
-            width: 450px;
-            .slick-list {
-
-            }
+            width: 400px;
             .slick-dots {
+                margin: 0 auto;
+                padding: 0;
+                width: 180px;
+                display: flex;
+                justify-content: space-between;
                 list-style-type: none;
+                li {
+                    button {
+                        background-color: #f0f0f0;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        font-size: 0px;
+                        border: 2px solid #6b6b6b;
+                    }
+                }
+                li.slick-active {
+                    button {
+                        background-color: #c70101;
+                    }
+                }
             }
             img {
                 max-width: 100%;
@@ -631,7 +742,7 @@
             padding: 18px 22px 20px 22px; 
             min-height: 338px;
             &__list {
-                min-height: 232px;
+                min-height: 230px;
                 li {
                     font-size: 10px;
                 }
@@ -651,7 +762,7 @@
                 font-size: 11px;
             }
             &__descr {
-                margin-top: 14px;
+                margin-top: 12px;
                 font-size: 10px;
                 line-height: 16px;
             }
@@ -668,7 +779,7 @@
         }
     }
     .feed {
-        min-height: 602px;
+        min-height: 580px;
         margin-top: 26px;
         &__item {
             margin-top: 34px;
@@ -676,6 +787,9 @@
         &__img {
             width: 119px;
             height: 119px
+        }
+        &__descr {
+            margin-left: 36px;
         }
         &__title {
             font-size: 11px;
@@ -720,6 +834,43 @@
             }
         }
     }
+    .modal {
+        width: 200px;
+        min-height: 202px;
+        padding: 10px 16px 20px 16px;
+        &__close {
+            top: -6px;
+            right: -22px;
+            font-size: 33px;
+            line-height: 33px;
+        }
+        &__subtitle {
+            font-size: 9px;
+        }
+        &__descr {
+            margin-top: 3px;
+            font-size: 7px;
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 0 15px;
+            height: 26px;
+            font-size: 7px;
+        }
+        input.error {
+            margin-bottom: 4px;
+            height: 26px;
+            font-size: 7px;
+        }
+        label.error {
+            margin-bottom: 4px;
+            font-size: 7px;
+        }
+        .button_submit {
+            height: 32px;
+            font-size: 9px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -737,6 +888,12 @@
         }
         &_submit {
             height: 38px;
+            width: 100%;
+            font-size: 10px;
+        }
+        &_mini {
+            width: 92px;
+            height: 30px;
             font-size: 10px;
         }
     }
@@ -760,28 +917,28 @@
         }
     }
     .promo {
-        min-height: 416px;
+        min-height: 436px;
         padding: 8px 0 51px 0;
         &__wrapper {
             margin-top: 75px;
         }
         &__header {
-            font-size: 20px;
+            font-size: 18px;
             line-height: 18px;
         }
         &__subheader {
-            font-size: 11px;
-            line-height: 11px;
+            font-size: 10px;
+            line-height: 10px;
         }
         &__icons {
-            width: 225px;
+            width: 215px;
             margin-top: 45px;
         }
         &__icon {
-            width: 72px;
-            font-size: 8px;
+            width: 68px;
+            font-size: 7px;
             img {
-                width: 26px;
+                width: 25px;
                 margin-bottom: 10px;
             }
         }
@@ -791,16 +948,16 @@
         }
     }
     .advantages {
-        min-height: 381px;
+        min-height: 556px;
         padding: 40px 0 34px 0;
         &__wrapper {
-            margin-top: 8px;
+            margin-top: 10px;
             flex-direction: column;
             align-items: center;
         }
         &__item {
             width: 204px;
-            margin-top: 22px;
+            margin-top: 20px;
             img {
                 width: 44px;
             }
@@ -816,7 +973,7 @@
         }
     }
     .consultation {
-        min-height: 396px;
+        min-height: 382px;
         padding: 45px 0 55px 0;
         &__descr {
             font-size: 10px;
@@ -825,36 +982,201 @@
     }
     .feed-form {
         width: 200px;
-        margin-top: 26px;
         &_mt25 {
-            width: 290px;
+            width: 100%;
+            margin-top: 10px;
         }
         input {
             height: 32px;
-            font-size: 9px;
-            margin-bottom: 14px;
+            font-size: 8px;
+            margin-bottom: 10px;
         }
         input.error {
-            margin-bottom: 8px;
+            height: 32px;
+            margin-bottom: 4px;
+            font-size: 8px;
         }
         label.error {
-            font-size: 9px;
-            margin-bottom: 8px;
+            font-size: 8px;
+            margin-bottom: 4px;
         }
     }
     .carousel {
         padding: 55px 0 30px 0;
         &__inner {
-            width: 200px;
-            .slick-list {
-
-            }
+            width: 250px;
             .slick-dots {
-                list-style-type: none;
+                width: 120px;
+                li {
+                    button {
+                        width: 15px;
+                        height: 15px;
+                        border: 1px solid #6b6b6b;
+                    }
+                }
             }
             img {
                 max-width: 100%;
             }
+        }
+    }
+    .catalog {
+        &__tabs {
+            padding-top: 8px;
+            flex-direction: column;
+        }
+        &__tab {
+            margin-top: 10px;
+            height: 34px;
+            font-size: 10px;
+            line-height: 30px;
+            div {
+                height: 34px;
+            }
+            &:hover {
+                box-shadow: 2px 2px 10px #6b6b6b;
+            }
+            &_active {
+                line-height: 34px;
+            }
+        }
+        &__content {
+            margin-top: 38px;
+            justify-content: center;
+        }
+        &-item {
+            width: 240px;
+            padding: 18px 22px 18px 22px; 
+            min-height: 312px;
+            &__list {
+                min-height: 204px;
+                li {
+                    font-size: 9px;
+                }
+            }
+            hr {
+                margin-bottom: 16px;
+            }
+            &__back {
+                font-size: 9px;
+            }
+            &__img {
+                height: 110px;
+            }
+            &__subtitle {
+                margin-top: 14px;
+                font-size: 10px;
+            }
+            &__descr {
+                margin-top: 12px;
+                font-size: 9px;
+                line-height: 14px;
+            }
+            &__link {
+                margin-top: 12px;
+                font-size: 9px;
+            }
+            &__old-price {
+                font-size: 10px;
+            }
+            &__price {
+                font-size: 13px;
+            }
+        }
+    }
+    .feed {
+        min-height: 592px;
+        margin-top: 20px;
+        padding: 0 10px;
+        &__item {
+            margin-top: 26px;
+        }
+        &__img {
+            width: 89px;
+            height: 89px
+        }
+        &__descr {
+            margin-left: 22px;
+        }
+        &__title {
+            font-size: 10px;
+        }
+        &__subtitle {
+            font-size: 7px;
+        }
+        &__text {
+            margin-top: 6px;
+            font-size: 8px;
+            line-height: 14px;
+            span {
+                margin-top: 6px;
+            }
+        }
+    }
+    .footer {
+        max-height: 350px;
+        margin-top: 26px;
+        iframe {
+            height: 350px;
+        }
+        &__info {
+            padding: 14px;
+            width: 215px;
+            height: 102px;
+        }
+        &__addr {
+            font-size: 10px;
+            line-height: 9px;
+            margin-bottom: 10px;
+        }
+        &__phone {
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+        &__social-item {
+            width: 24px;
+            height: 24px;
+            img {
+                width: 10px;
+                height: 12px;
+            }
+        }
+    }
+    .modal {
+        width: 178px;
+        min-height: 192px;
+        padding: 10px 16px 20px 16px;
+        &__close {
+            top: -6px;
+            right: -18px;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__subtitle {
+            font-size: 8px;
+        }
+        &__descr {
+            margin-top: 2px;
+            font-size: 6px;
+        }
+        input {
+            margin-bottom: 8px;
+            padding: 0 15px;
+            height: 25px;
+            font-size: 7px;
+        }
+        input.error {
+            height: 25px;
+            font-size: 7px;
+            margin-bottom: 4px;
+        }
+        label.error {
+            margin-bottom: 4px;
+            font-size: 7px;
+        }
+        .button_submit {
+            height: 30px;
+            font-size: 8px;
         }
     }
 }
