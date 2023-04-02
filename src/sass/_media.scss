@@ -264,6 +264,19 @@
             height: 50px;
             font-size: 14px;
         }
+        &_mini {
+            min-height: 120px;
+            padding: 24px 30px 30px 30px;
+            .modal__descr {
+                margin-top: 11px;
+            }
+        }
+    }
+    .pageup {
+        bottom: 30px;
+        right: 30px;
+        width: 35px;
+        height: 35px;
     }
 }
 
@@ -558,6 +571,19 @@
             height: 40px;
             font-size: 11px;
         }
+        &_mini {
+            min-height: 94px;
+            padding: 16px 24px 24px 24px;
+            .modal__descr {
+                margin-top: 9px;
+            }
+        }
+    }
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
     }
 }
 
@@ -870,6 +896,19 @@
             height: 32px;
             font-size: 9px;
         }
+        &_mini {
+            min-height: 66px;
+            padding: 10px 16px 16px 16px;
+            .modal__descr {
+                margin-top: 6px;
+            }
+        }
+    }
+    .pageup {
+        bottom: 13px;
+        right: 13px;
+        width: 25px;
+        height: 25px;
     }
 }
 
@@ -1178,5 +1217,18 @@
             height: 30px;
             font-size: 8px;
         }
+        &_mini {
+            min-height: 60px;
+            padding: 10px 16px 16px 16px;
+            .modal__descr {
+                margin-top: 4px;
+            }
+        }
+    }
+    .pageup {
+        bottom: 10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
     }
 }

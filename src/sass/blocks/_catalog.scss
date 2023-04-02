@@ -138,6 +138,10 @@
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
             li {
                 position: relative;
                 color: #555555;
