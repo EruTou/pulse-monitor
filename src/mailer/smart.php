@@ -20,7 +20,7 @@ $mail->Port = 465;                                    // TCP port to connect to
 
 $mail->setFrom('rkzl.dkzl.info@mail.ru', 'Pulse');   // От кого письмо 
 $mail->addAddress('norotan387@mitigado.com');     // Add a recipient
-$mail->addAddress('finogod444@dogemn.com');               // Name is optional
+// $mail->addAddress('finogod444@dogemn.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
